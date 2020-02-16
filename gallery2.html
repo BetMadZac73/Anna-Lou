@@ -24,11 +24,11 @@
       var i;
       var text;
       for ( i = 1; i <= x; i++) {
-        text = '<div class="gallery">';
-        text += '<a target="_blank" href="./art/img_'+i+'.jpg">';
-        text += '<img class="gallery" src="./art/img_'+i+'.jpg" ></a>';
+        text = '<a target="_blank" href="./art/img_'+i+'.jpg">';
+        text += '<div class="gallery">';
+        text += '<img class="gallery" src="./art/img_'+i+'.jpg" >';
         text += '<div class="desc"> Image '+i+'</div>';
-        text += '</div>'
+        text += '</div></a>'
         document.write(text)
       }
     </script> </div>

@@ -19,16 +19,15 @@
         mollit anim id est laborum." <br>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum." <br>
-      </div>
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum." <br>
+        <a href="./gallery2.html">Visit alternate gallery view</a> </div>
     </div>
     <div id="myGallery" class="parallax" style="background-image: url('art/display.jpg'); height: 999px;">
-      <div class="title"> Picture Gallery 
-        </div>
+      <div class="title"> Picture Gallery </div>
       <script>
         var x = 29;
         var i;
@@ -48,9 +47,11 @@
           }
         document.write('<div class="clearfix '+side+'" ');
         document.write('<h3 style="float: '+side+'; font-size: 48px; font-weight: bold;"> &nbsp; Image '+i+' </h3>');
-        document.write('<img class="gallery '+text+'" style="max-height: '+maxH+'px;max-width: '+maxW+'px;" src="./art/img_'+i+'.jpg"> </div>');
+        //document.write('<img class="gallery '+text+'" style="max-height: '+maxH+'px;max-width: '+maxW+'px;" src="./art/img_'+i+'.jpg"> </div>');
+        document.write('<img class="gallery '+text+'" src="./art/img_'+i+'.jpg"> </div>');
         }
         document.getElementById("myGallery").style.height = (x*1000)+'px';
       </script> </div>
+    
   </body>
 </html>
