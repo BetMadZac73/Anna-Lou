@@ -1,0 +1,47 @@
+* {
+    font-family: fantasy, "Comic Sans MS", arial;
+}
+.title { 
+    width: 90%;
+    margin: auto;
+    background-color: rgb(50, 50, 50);
+    border-radius: 20px;
+    border: outset 4px rgb(50, 250, 90);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.center {
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+}
+.center:hover {
+    border-color: rgb(0, 0, 0);
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  height: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  max-width: 180px;
+  max-height: 120px;
+  margin: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}

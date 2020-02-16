@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>gallery2</title>
+    <link rel="stylesheet" href="./gallery2.css">
+  </head>
+  <body>
+    <div class="title">
+      <h2> &nbsp;Overview </h2>
+    </div>
+    <div class="section center"> <img src="./art/anna-lou.jpg" style="width:20%; float: right;">
+      Hi there, <br>
+      <br>
+      &nbsp; My name is Anna-lou and I am an artist based in Northamptonshire.
+      Please take a look at some of my work displayed below </div>
+    <div class="title">
+      <h2> &nbsp;Gallery </h2>
+    </div>
+    <div class="center section">
+      <script>
+    var x = 28;
+      var i;
+      var text;
+      for ( i = 1; i <= x; i++) {
+        text = '<div class="gallery">';
+        text += '<a target="_blank" href="./art/img_'+i+'.jpg">';
+        text += '<img class="gallery" src="./art/img_'+i+'.jpg" ></a>';
+        text += '<div class="desc"> Image '+i+'</div>';
+        text += '</div>'
+        document.write(text)
+      }
+    </script> </div>
+    
+  </body>
+</html>
