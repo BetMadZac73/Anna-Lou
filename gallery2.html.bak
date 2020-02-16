@@ -17,7 +17,7 @@
       &nbsp; My name is Anna-lou and I am an artist based in Northamptonshire.
       Please take a look at some of my work displayed below <br>
       <br>
-      <a href="./index.html">return to first gallery view</a><br>
+      <a href="./index.html">return to first gallery view</a><br>&nbsp;<br>&nbsp;
       <div class="fb-like" data-href="https://www.facebook.com/Anna-Lou-Art-108879957327886/?epa=SEARCH_BOX"
 
         data-width="200" data-layout="standard" data-action="like" data-size="large"
@@ -33,7 +33,7 @@
       var i;
       var text;
       for ( i = 1; i <= x; i++) {
-        text = '<a target="_blank" href="./art/img_'+i+'.jpg">';
+        text = '<a target="_blank" href="./viewer.html&img='+i+'">';
         text += '<div class="gallery">';
         text += '<img class="gallery" src="./art/img_'+i+'.jpg" >';
         text += '<div class="desc"> Image '+i+'</div>';

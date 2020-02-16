@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>viewer</title>
+    <link rel="stylesheet" href="./viewer.css">
+  </head>
+  <body>
+    <div id="backdrop" class="background">
+      <div class="title" id="title"> Viewing Gallery </div>
+      <div class="picFrame"> <img id="frame" class="picFrame" src="./art/img_1.jpg">
+      </div>
+      <div class="buttons"> <button onclick="changePic(-1)" id="back" class="btn">«</button><button
+
+          onclick="changePic(+1)" id="next" class="btn">»</button> </div>
+      <script>
+      var x = 28;
+      var img = location.search.slice(5);
+      var ii;
+      loadPic(img);
+    var maxH = window.innerHeight * 0.74;
+    var btnW = window.innerWidth * 0.05;
+    document.getElementById("frame").style.height = maxH+"px";
+    document.getElementById("back").style.maxWidth = btnW+"px";
+    document.getElementById("next").style.maxWidth = btnW+"px";
+      function loadPic(img) {
+        document.getElementById("frame").src = "./art/img_"+img+".jpg";
+        document.getElementById("title").innerHTML = "Viewing Gallery - Image "+img;
+        document.body.style.backgroundImage = "url('./art/img_"+img+".jpg";
+      }
+      function changePic(ii) {
+      img = parseInt(img) + ii;
+        if (img > x) {
+          img = 1;
+        } else if (img < 1) {
+          img = x;
+        }
+        document.getElementById("frame").src = "./art/img_"+img+".jpg";
+        document.getElementById("title").innerHTML = "Viewing Gallery - Image "+img;
+        document.body.style.backgroundImage = "url('./art/img_"+img+".jpg";
+    }
+    </script> </div>
+    
+  </body>
+</html>

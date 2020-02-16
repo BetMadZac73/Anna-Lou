@@ -1,0 +1,59 @@
+.title {
+  height: 10%;
+  max-width: 85%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-family: fantasy, "Comic Sans MS", arial;
+  font-size: 32px;
+  font_weight: bold;
+  background-color: white;
+  z-index: 9;
+  opacity: 1;
+}
+.picFrame {
+  max-height: 74%;
+  max-width: 85%;
+  margin: auto;
+  padding: 10px;
+  background-color: white;
+  z-index: 9;
+  opacity: 1;
+}
+img.picFrame {
+  display:block;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-color: black;
+  outline-style: outset;
+  outline-color: gray;
+  background-color: white;
+  z-index: 9;
+  opacity: 100%;
+}
+img {
+  opacity: 1;
+}
+.buttons {
+  max-width: 85%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  z-index: 9;
+  opacity: 1;
+}
+.btn {
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1;
+}
+.btn:hover {
+  background-color: rgb(50,250,50);
+  cursor: pointer;
+  z-index: 1;
+}
