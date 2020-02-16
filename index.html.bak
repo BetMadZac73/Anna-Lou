@@ -30,11 +30,13 @@
       <div class="title"> Picture Gallery 
         </div>
       <script>
-        var x = 7;
+        var x = 29;
         var i;
         var y = 0;
         var side = "left"
         var text = "right"
+        var maxH = window.innerHeight * 0.8;
+        var maxW = window.innerWidth * 0.6;
         for (i = 1; i < x; i++) {
           y = i % 2;
           if ( y == 1 ) {
@@ -44,9 +46,9 @@
             side = "right";
             text = "left";
           }
-        document.write('<div class="clearfix '+side+'"');
-        document.write('<h3 class="'+side+'"> &nbsp; Image '+i+' </h3>');
-        document.write('<img class="gallery '+text+'" src="./art/img_'+i+'.jpg"> </div>');
+        document.write('<div class="clearfix '+side+'" ');
+        document.write('<h3 style="float: '+side+';"> &nbsp; Image '+i+' </h3>');
+        document.write('<img class="gallery '+text+'" style="max-height: '+maxH+'px;max-width: '+maxW+'px;" src="./art/img_'+i+'.jpg"> </div>');
         }
         document.getElementById("myGallery").style.height = (x*1000)+'px';
       </script> </div>

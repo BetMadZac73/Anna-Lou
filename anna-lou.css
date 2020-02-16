@@ -48,8 +48,8 @@ a:hover {
     color: crimson;
 }
 img.gallery {
-    width: 70%; 
-    height: 70%;
+    max-height: 70%;
+    max-width: 70%;
     padding: 20px;
     border: outset 6px rgba(50, 50, 80, 1);
     outline: rgba(150, 150, 180, 1) inset 6px;
@@ -72,6 +72,7 @@ img.gallery:hover {
     background-color: rgba(255,255,255,0.5);
     font-size: 32px;
     min-height: 300px;
+    max-height: 90%;
     width: 80%; 
     margin: 40px;
     padding: 25px;
