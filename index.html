@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>anna lou art</title>
+    <link rel="stylesheet" href="./anna-lou.css">
+  </head>
+  <body>
+    <div class="title"> Anna Lou - about </div>
+    <div class="parallax">
+      <div class="section"> <img class="profile" alt="anna-lou" src="./art/anna-lou.jpg">
+        Welcome - My name is Anna-Lou, <br>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum." <br>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum." <br>
+      </div>
+    </div>
+    <div id="myGallery" class="parallax" style="background-image: url('art/display.jpg'); height: 999px;">
+      <div class="title"> Picture Gallery </div>
+      <div class="clearfix left">
+        <h3 class="left"> Image 1 </h3>
+        <img class="gallery right" src="./art/img_1.jpg"> </div>
+      <div class="clearfix right">
+        <h3 class="right"> Image 2 </h3>
+        <img class="gallery left" src="./art/img_2.jpg"> </div>
+      <script>
+        var x = 7;
+        var i;
+        var y = 0;
+        var side = "left"
+        var text = "right"
+        for (i = 1; i < x; i++) {
+          y = i % 2;
+          if ( y == 1 ) {
+            side = "left";
+            text = "right";
+          } else {
+            side = "right";
+            text = "left";
+          }
+        document.write('<div class="clearfix '+side+'"');
+        document.write('<h3 class="'+side+'"> Image '+i+' </h3>');
+        document.write('<img class="gallery '+text+'" src="./art/img_'+i+'.jpg"> </div>');
+        }
+        document.getElementById("myGallery").style.height = (x*1000)+'px';
+      </script> </div>
+    
+  </body>
+</html>
