@@ -47,7 +47,7 @@
             text = "left";
           }
         document.write('<div class="clearfix '+side+'" ');
-        document.write('<h3 style="float: '+side+';"> &nbsp; Image '+i+' </h3>');
+        document.write('<h3 style="float: '+side+'; font-size: 48px; font-weight: bold;"> &nbsp; Image '+i+' </h3>');
         document.write('<img class="gallery '+text+'" style="max-height: '+maxH+'px;max-width: '+maxW+'px;" src="./art/img_'+i+'.jpg"> </div>');
         }
         document.getElementById("myGallery").style.height = (x*1000)+'px';
