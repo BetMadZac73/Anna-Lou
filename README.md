@@ -12,3 +12,7 @@ Now for smeone who isn't familiar with coding - making and maintianing a web-pag
 Now I am just waiting to see if my sister likes the idea and will want to take it up and take it over - then I need to go train her how to do that. 
 
 BetMadZac. 
+
+Option 1: https://betmadzac73.github.io/Anna-Lou/index.html
+Option 2: https://betmadzac73.github.io/Anna-Lou/gallery2.html
+Sub option 2 (viewer) : https://betmadzac73.github.io/Anna-Lou/viewer.html?img=9
