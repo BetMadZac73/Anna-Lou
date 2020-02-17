@@ -1,3 +1,8 @@
+.fade {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 110%;
+  width: 100%;
+}
 .title {
   height: 10%;
   max-width: 85%;
@@ -7,7 +12,7 @@
   font-family: fantasy, "Comic Sans MS", arial;
   font-size: 32px;
   font_weight: bold;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 9;
   opacity: 1;
 }
@@ -16,7 +21,7 @@ div.picFrame {
   max-width: 85%;
   margin: auto;
   padding: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 9;
   opacity: 1;
 }
@@ -27,12 +32,14 @@ img.picFrame {
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px;
   border-style: inset;
   border-color: black;
+  box-shadow: 2px 5px 8px #222222, 25px 25px 28px #AAAAAA;
   outline-style: outset;
   outline-color: gray;
   background-color: white;
-  z-index: 9;
+  z-index: 19;
   opacity: 100%;
 }
 img {
@@ -43,15 +50,15 @@ img {
   margin: auto;
   padding: 10px;
   text-align: center;
-  background-color: white;
-  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
   opacity: 1;
 }
 .btn {
   border-radius: 50%;
   font-size: 24px;
   font-weight: bold;
-  z-index: 1;
+  z-index: 10;
 }
 .btn:hover {
   background-color: rgb(50,250,50);
