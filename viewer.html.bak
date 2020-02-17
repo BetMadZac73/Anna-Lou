@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./viewer.css">
   </head>
   <body>
-    <div id="backdrop" class="background">
+    <div id="backdrop" class="backdrop">
       <div class="title" id="title"> Viewing Gallery </div>
       <div class="picFrame"> <img id="frame" class="picFrame" src="./art/img_1.jpg">
       </div>
@@ -20,7 +20,7 @@
       loadPic(img);
     var maxH = window.innerHeight * 0.74;
     var btnW = window.innerWidth * 0.05;
-    document.getElementById("frame").style.height = maxH+"px";
+    document.getElementById("frame").style.maxHeight = maxH+"px";
     document.getElementById("back").style.maxWidth = btnW+"px";
     document.getElementById("next").style.maxWidth = btnW+"px";
       function loadPic(img) {
@@ -40,6 +40,5 @@
         document.body.style.backgroundImage = "url('./art/img_"+img+".jpg";
     }
     </script> </div>
-    
   </body>
 </html>
